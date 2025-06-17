@@ -6,21 +6,24 @@ ConnectionFactory factory = new();
 factory.Uri = new Uri("amqps://aedqltkd:znYq84Ah2qLfBa0xUq6Zoe8XO38fg8PF@moose.rmq.cloudamqp.com/aedqltkd");
 
 // Bağlantıyı aktifleştirme ve kanal açma
-using var connection = await factory.CreateConnectionAsync();
-using var channel = await connection.CreateChannelAsync();
+using IConnection connection = factory.CreateConnection();
+using IModel channel = connection.CreateModel();
 
-// Queue oluşturma
-await channel.QueueDeclareAsync(queue: "example-queue", exclusive: false);
+//Queue Oluşturma
+channel.QueueDeclare(queue: "example-queue", exclusive: false, durable: true);
 
-// Queue Mesaj gönderme
+//Queue'ya Mesaj Gönderme
 
-// RabbitMQ kuyruğa atacağı mesajları byte türünden kabul eder. Mesalarımızı byte dönüştürmemiz gerekecek.
-for(int i = 0; i < 100; i++)
+//RabbitMQ kuyruğa atacağı mesajları byte türünden kabul etmektedir. Haliyle mesajları bizim byte dönüşmemiz gerekecektir.
+
+IBasicProperties properties = channel.CreateBasicProperties();
+properties.Persistent = true;
+
+for (int i = 0; i < 100; i++)
 {
     await Task.Delay(200);
-    byte[] message = Encoding.UTF8.GetBytes("Merhaba" + i);
-    await channel.BasicPublishAsync(exchange: "", routingKey: "example-queue", body: message);
+    byte[] message = Encoding.UTF8.GetBytes("Merhaba " + i);
+    channel.BasicPublish(exchange: "", routingKey: "example-queue", body: message, basicProperties: properties);
 }
-
 
 Console.Read();
