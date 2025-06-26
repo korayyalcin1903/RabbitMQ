@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Header.Exchange.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Header.Exchange.Publisher", "ExchangeTypes\RabbitMQ.Header.Exchange.Publisher\RabbitMQ.Header.Exchange.Publisher.csproj", "{1F8DF5AC-DC6D-49ED-BB69-DA237149604A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MessageDesignPatterns", "MessageDesignPatterns", "{0BC13BE3-1486-48FE-B3B7-7C962FF73422}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Message.Templates.Consumer", "MessageDesignPatterns\RabbitMQ.Message.Templates.Consumer\RabbitMQ.Message.Templates.Consumer.csproj", "{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Message.Templates.Publisher", "MessageDesignPatterns\RabbitMQ.Message.Templates.Publisher\RabbitMQ.Message.Templates.Publisher.csproj", "{F56FE1A2-3BC4-498F-B406-206569F2B5A6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -71,6 +77,14 @@ Global
 		{1F8DF5AC-DC6D-49ED-BB69-DA237149604A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1F8DF5AC-DC6D-49ED-BB69-DA237149604A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1F8DF5AC-DC6D-49ED-BB69-DA237149604A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -84,6 +98,8 @@ Global
 		{46F74C43-61F9-4065-BA68-9BEB4CEB825A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{C0EBB0AB-3029-4B26-81D3-346E08FCB805} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{1F8DF5AC-DC6D-49ED-BB69-DA237149604A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F} = {0BC13BE3-1486-48FE-B3B7-7C962FF73422}
+		{F56FE1A2-3BC4-498F-B406-206569F2B5A6} = {0BC13BE3-1486-48FE-B3B7-7C962FF73422}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7703CBA9-354B-46D7-AA1F-761AFFCE7CB9}
