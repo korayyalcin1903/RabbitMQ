@@ -31,6 +31,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Message.Templates.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.Message.Templates.Publisher", "MessageDesignPatterns\RabbitMQ.Message.Templates.Publisher\RabbitMQ.Message.Templates.Publisher.csproj", "{F56FE1A2-3BC4-498F-B406-206569F2B5A6}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExampleMassTransit", "ExampleMassTransit", "{4EC9128E-18D3-4822-B404-6C957A8BBBDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Shared", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.Shared\RabbitMQ.ESB.MassTransit.Shared.csproj", "{A8BF5026-DA73-421C-985D-8D3342DECAD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Consumer", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.Consumer\RabbitMQ.ESB.MassTransit.Consumer.csproj", "{56673C36-4BB1-4F89-B742-ABCFC7725813}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.Publisher", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.Publisher\RabbitMQ.ESB.MassTransit.Publisher.csproj", "{1BC2BCB9-561E-42B1-B7B4-70A8E18A92D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.WorkerService.Publisher", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.WorkerService.Publisher\RabbitMQ.ESB.MassTransit.WorkerService.Publisher.csproj", "{575BAC36-0EDD-42CC-B84D-D177F169A4D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.WorkerService.Consumer", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.WorkerService.Consumer\RabbitMQ.ESB.MassTransit.WorkerService.Consumer.csproj", "{C2CA35A5-E70A-4525-9847-8D07D2C5F80E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.RequestResponsePattern.Consumer", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.RequestResponsePattern.Consumer\RabbitMQ.ESB.MassTransit.RequestResponsePattern.Consumer.csproj", "{859ED823-114B-40DF-93F2-46F244D0927D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RabbitMQ.ESB.MassTransit.RequestResponsePattern.Publisher", "ExampleMassTransit\RabbitMQ.ESB.MassTransit.RequestResponsePattern.Publisher\RabbitMQ.ESB.MassTransit.RequestResponsePattern.Publisher.csproj", "{5E63FE22-2005-4BFE-9FCC-02F10E38BC20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -85,6 +101,34 @@ Global
 		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F56FE1A2-3BC4-498F-B406-206569F2B5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8BF5026-DA73-421C-985D-8D3342DECAD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8BF5026-DA73-421C-985D-8D3342DECAD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8BF5026-DA73-421C-985D-8D3342DECAD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8BF5026-DA73-421C-985D-8D3342DECAD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56673C36-4BB1-4F89-B742-ABCFC7725813}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56673C36-4BB1-4F89-B742-ABCFC7725813}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56673C36-4BB1-4F89-B742-ABCFC7725813}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56673C36-4BB1-4F89-B742-ABCFC7725813}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BC2BCB9-561E-42B1-B7B4-70A8E18A92D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BC2BCB9-561E-42B1-B7B4-70A8E18A92D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BC2BCB9-561E-42B1-B7B4-70A8E18A92D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BC2BCB9-561E-42B1-B7B4-70A8E18A92D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{575BAC36-0EDD-42CC-B84D-D177F169A4D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{575BAC36-0EDD-42CC-B84D-D177F169A4D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{575BAC36-0EDD-42CC-B84D-D177F169A4D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{575BAC36-0EDD-42CC-B84D-D177F169A4D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2CA35A5-E70A-4525-9847-8D07D2C5F80E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2CA35A5-E70A-4525-9847-8D07D2C5F80E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2CA35A5-E70A-4525-9847-8D07D2C5F80E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2CA35A5-E70A-4525-9847-8D07D2C5F80E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{859ED823-114B-40DF-93F2-46F244D0927D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{859ED823-114B-40DF-93F2-46F244D0927D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{859ED823-114B-40DF-93F2-46F244D0927D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{859ED823-114B-40DF-93F2-46F244D0927D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E63FE22-2005-4BFE-9FCC-02F10E38BC20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E63FE22-2005-4BFE-9FCC-02F10E38BC20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E63FE22-2005-4BFE-9FCC-02F10E38BC20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E63FE22-2005-4BFE-9FCC-02F10E38BC20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,6 +144,13 @@ Global
 		{1F8DF5AC-DC6D-49ED-BB69-DA237149604A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{7A92236E-C9D8-47C7-87D7-A8B1EF5BA64F} = {0BC13BE3-1486-48FE-B3B7-7C962FF73422}
 		{F56FE1A2-3BC4-498F-B406-206569F2B5A6} = {0BC13BE3-1486-48FE-B3B7-7C962FF73422}
+		{A8BF5026-DA73-421C-985D-8D3342DECAD2} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
+		{56673C36-4BB1-4F89-B742-ABCFC7725813} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
+		{1BC2BCB9-561E-42B1-B7B4-70A8E18A92D3} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
+		{575BAC36-0EDD-42CC-B84D-D177F169A4D0} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
+		{C2CA35A5-E70A-4525-9847-8D07D2C5F80E} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
+		{859ED823-114B-40DF-93F2-46F244D0927D} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
+		{5E63FE22-2005-4BFE-9FCC-02F10E38BC20} = {4EC9128E-18D3-4822-B404-6C957A8BBBDA}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7703CBA9-354B-46D7-AA1F-761AFFCE7CB9}
